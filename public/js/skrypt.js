@@ -95,12 +95,20 @@ $(() => {
 		var naglowki = '';
 		for(let i = 1; i <= rozmiar; i++){
 			naglowki += "<th>" + i + "</th>";
-			pola += "<td><input type='text' class='pole'/></td>";
+			pola += "<td><input type='text' class='pole poleText'/></td>";
 		}
-		naglowki += "<td><b>Postęp</b></td>";
+		naglowki += "<th><b>Postęp</b></th>";
 
-		var gra = "</br><div><h2 id='gra2'>"+msg+"</h2><h4 id='wiadomosc'>-</h4><div id='rozgrywka'><button id='ok'>OK</button> Ruchy: <span id='ruchy'>0</span>"+
-	    "<table><tr>"+naglowki+"</tr><tr>"+pola+"</tr><tbody id='tabela'></tbody></table></div>";
+		var gra = "</br>"+
+                    "<h2 id='gra2'>"+msg+"</h2>"+
+                    "<h4 id='wiadomosc'>-</h4>"+
+                    "<div id='rozgrywka'>"+
+                        "<button id='ok'>OK</button> Ruchy: <span id='ruchy'>0</span>"+
+	               "<table class='gracz'>"+
+                        "<tr>"+naglowki+"</tr>"+
+                        "<tr>"+pola+"</tr>"+
+                        "<tbody id='tabela'></tbody>"+
+                  "</table>";
 		$('#gra').html(gra);
 		$("#ok").click(okClick);
 			

@@ -7,28 +7,26 @@
     <script src='/js/skrypt.js'></script>
   </head>
   <body>
-    <h1>Witaj w <%= title %></h1>
-    <div>
+    <div class="srodek">
+       <h1>Witaj w <%= title %></h1>
        <h4 id="blad">Wypełnij wszystkie pola liczbami!</h4>
-        <table>
-          <tr>
-            <td>Podaj liczbę elementów w rzędzie:</td>
-            <td><input type="text" id="size"/></td>
-          </tr>
-          <tr>
-            <td>Podaj liczbę używanych „kolorów”:</td>
-            <td><input type="text" id="dim"/></td>
-          </tr>
-          <tr>
-            <td>Podaj maksymalną liczbę ruchów (0 oznacza brak ograniczeń):</td>
-            <td><input type="text" id="max"/></td>
-          </tr>
-          <tr>
-            <td><button id="nowa">Nowa gra</button></td>
-          </tr> 
-        </table>
+       <table class="ustawienia">
+            <tr>
+                <td>Podaj liczbę elementów w rzędzie:</td>
+                <td><input type="text" id="size" class="poleText mojRadius"/></td>
+            </tr>
+            <tr>
+                <td>Podaj liczbę używanych „kolorów”:</td>
+                <td><input type="text" id="dim" class="poleText mojRadius"/></td>
+            </tr>
+            <tr>
+                <td>Podaj maksymalną liczbę ruchów (0 oznacza brak ograniczeń):</td>
+                <td><input type="text" id="max" class="poleText mojRadius"/></td>
+            </tr>
+       </table>
+        <button id="nowa">Nowa gra</button>
     </div>
-    <div id="gra">
+    <div id="gra" class="srodek">
     </div>
   </body>
 </html>
