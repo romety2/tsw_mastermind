@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <script src='jquery.min.js'></script>
+    <script src='/js/skrypt.js'></script>
+  </head>
+  <body>
+    <h1>Witaj w <%= title %></h1>
+    <div>
+       <h4 id="blad">Wypełnij wszystkie pola liczbami!</h4>
+        <table>
+          <tr>
+            <td>Podaj liczbę elementów w rzędzie:</td>
+            <td><input type="text" id="size"/></td>
+          </tr>
+          <tr>
+            <td>Podaj liczbę używanych „kolorów”:</td>
+            <td><input type="text" id="dim"/></td>
+          </tr>
+          <tr>
+            <td>Podaj maksymalną liczbę ruchów (0 oznacza brak ograniczeń):</td>
+            <td><input type="text" id="max"/></td>
+          </tr>
+          <tr>
+            <td><button id="nowa">Nowa gra</button></td>
+          </tr> 
+        </table>
+    </div>
+    <div id="gra">
+    </div>
+  </body>
+</html>

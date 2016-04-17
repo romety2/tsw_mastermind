@@ -1,0 +1,39 @@
+// out: ../../public/css/style.css, compress: true
+
+@bialy: #FFFFFF;
+@czarny: #000000;
+@czerwony: #FF0000;
+
+body {
+    padding: 50px;
+    font-family: Consolas, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: azure;
+}
+a {
+    color: #00B7FF;
+}
+
+#blad{
+    color: @czerwony;
+    display: none;
+}
+
+.pkt {
+	height: 10px;
+	width: 10px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: @czarny;
+	border-radius: 15px;
+    margin: 3px;
+	display: inline-block;
+}
+.pktCzarny{
+	background: @czarny;
+	.pkt;
+}
+.pktBialy{
+	background: @bialy;
+	.pkt;
+}
